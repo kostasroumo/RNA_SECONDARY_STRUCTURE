@@ -55,19 +55,14 @@ def get_opt_val(sequence: str, opt_val: list, opt_val_pairs: list, i: int, j: in
                 val_2=get_opt_val(sequence,opt_val,opt_val_pairs,t+1,j-1,fold)
                 new_val=val_1+val_2 +1
                 val_list.append(new_val)
-               
             else:
                 val_list.append(-1)
-               
-
+                
         max_1=max(val_list)
         if max_1>val:
             val=max_1
-           
-
-
+            
         opt_val[i][j]=val
-
         return val
 
 
@@ -88,16 +83,11 @@ def compute_rna_secondary_structure(sequence: str) -> tuple:
             j = i + k
             get_opt_val(sequence, opt_val, opt_val_pairs, i, j,fold)
     
-
     fold=[]
     pairs=extract_pairs(opt_val,0,n-1,sequence)
-    
-
-
-
-
     sorted_pairs = pairs
     dot_bracket_notation = get_dot_bracket_notation(n, sorted_pairs)
+    
     return  sorted_pairs,dot_bracket_notation
     
 
