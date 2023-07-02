@@ -1,13 +1,10 @@
 ## **_RNA SECONDARY STRUCTURE_**
-***
-***
 _This repository contains  a .py file for  prediction of  RNA secondary structure, knowing the RNA sequence._
 ***
-***
 
 
 
-</br>
+
 </br>
 
 ### **_THEORITICAL BACKROUND_**
@@ -49,7 +46,7 @@ _This repository contains  a .py file for  prediction of  RNA secondary structur
 
 </br>
 
-> **(6.13)   &ensp; max(OPT(i,j-1),max(1 + OPT(i,t-1) +OPT(t+1,j-1)**
+> **(6.13)   &ensp; max(OPT(i,j-1),max(1 + OPT(i,t-1) + OPT(t+1,j-1))**
 
 
 </br>
@@ -81,7 +78,7 @@ _Combines the other functions and returns rna secondary structure in dot bracket
 ### **APPLICATION**
 ***
 
-* _We have the following three (3) rna sequences:_
+* _Have the following three (3) rna sequences:_
 
    1. &ensp; sequence = 'ACCGGUAGU'
    1. &ensp; sequence = 'AUGGCCAUUGUAAUGGGCCGCUGA'
