@@ -1,5 +1,7 @@
 ## **_RNA SECONDARY STRUCTURE_**
 _This repository contains  a .py file for  prediction of  RNA secondary structure, knowing the RNA sequence._
+</br>
+_It is a Dynamic Programming problem._
 ***
 
 
